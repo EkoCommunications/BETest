@@ -1,0 +1,17 @@
+env:
+  browser: false
+  commonjs: true
+  es2021: true
+extends:
+  - airbnb-base
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: latest
+plugins:
+  - '@typescript-eslint'
+rules:
+  newline-per-chained-call: [2, { 'ignoreChainWithDepth': 5 }]
+  no-plusplus: [2, { 'allowForLoopAfterthoughts': true }]
+  max-len: [2, { 'code': 200, 'tabWidth': 2, 'comments': 120, 'ignoreUrls': true }]
+  func-names: [2, 'as-needed']
+  space-before-function-paren: [2, 'always']
