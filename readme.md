@@ -10,6 +10,14 @@ Group 1,user1,user1@email.com
 The sorting must match the following orders.
 1. Sort by group name ascending
 2. Sort by username ascending
+## Question 2
+Please write a node.js code that updates all the users in the mongodb by capitalizing the first letter of their own usernames.
+For example:
+```
+username:
+user1 => User1
+john-doe => John-doe
+```
 
 # Data Schema
 Schema files are located in the `/schemas` folder. The folder contains 3 schema files as listed here.
@@ -22,10 +30,3 @@ An idividual user must have username and eamil registered in the system.
 The `meta.isPrivate` field is a flag to specify if a group is private or not.
 ### Group User
 It is composed of group id and user id. The `createdAt` field can be used to determine when a user joined a group.
-## Questions
-Please write a node.js code that capitalizes and updates  usernames in the mongodb.
-For example:
-```
-username:
-user1 => User1
-```
